@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid #333;
+      } */
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8{
+        margin:8px;
+      }
+      .mgr8{
+        margin-right:8px;
+      }
+      .mgt8{
+        margin-top:8px;
+      }
+      .yinying{
+        box-shadow: 10px 10px 5px #888888;
+
+      }
+      .daoHang{
+        padding:10px 20px;
+        border-bottom:1px solid gray;
+        font-size:18px;
+        color:#666
+
+      }
+      @media (max-width:600px){
+        .ceBian{
+            display:none;
+
+        }
+        .neiRong{
+            flex-direction:column;
+        }
+        .shuJuQu{
+            flex-direction:column;
+        }
+      }
+
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index:2" class="baiSe yinying ceBian">
+    <!--头像栏-->
+    <div style="padding:10px;align-items:center;justify-coentent:center; border-bottom:1px solid #999" class="flex">
+        <img src="https://img0.baidu.com/it/u=791299632,852249019&fm=253&fmt=auto&app=138&f=JPEG?w=260&h=261" width="40px" height="40px" alt=""/>
+
+        <div style="margin-left:10px">王帅</div>
+    </div>
+    
+    <!--导航栏-->
+    <div class="flex1">
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+    </div>
+    
+    </div>
+    <!--主区域-->
+    <div class="flex flex1 column">
+    <!--头部栏-->
+    <div style="height: 200px  ; z-index:1" class="baiSe yinying"></div>
+    <!--内容区-->
+    <div style="overflow:auto"class="flex1 flex neiRong">
+        <!--左区-->
+        <div style="flex:3" class="flex column mg8">
+        <!--数据区-->
+        <div class="flex shuJuQu">
+            <!--数据块-->
+            <div style="height:100px" class="flex1 baiSe  mgr8 yinying"></div>
+            <!--数据块-->
+            <div style="height:100px" class="flex1 baiSe  mgr8 yinying"></div>
+            <!--数据块-->
+            <div style="height:100px" class="flex1 baiSe  mgr8 yinying"></div>
+            <!--数据块-->
+            <div style="height:100px" class="flex1 baiSe  mgr8 yinying"></div>
+        </div>
+        <!--列表区-->
+        <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px;class="baiSe  mgt8 yinying"></div>
+            <div style="height:160px" class="baiSe  mgt8 yinying"></div>
+            <div style="height:160px" class="baiSe  mgt8 yinying"></div>
+            <div style="height:160px" class="baiSe  mgt8 yinying"></div>
+            <div style="height:160px" class="baiSe  mgt8 yinying"></div>
+            <div style="height:160px" class="baiSe  mgt8 yinying"></div>
+            <div style="height:160px" class="baiSe  mgt8 yinying"></div>
+           
+
+        </div>
+        </div>
+        <!--右区-->
+        <div style="flex:1" class="flex column mgr8 mgt8  ">
+        <!--提示区-->
+        <div style="height:300px" class="baiSe yinying"  ></div>
+        <!--消息区-->
+         <div style="height:500px" class="baiSe  mgt8 yinying"></div>
+        </div>
+  
+</html>
